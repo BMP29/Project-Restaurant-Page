@@ -1,3 +1,11 @@
+import facebook from '../assets/icons/facebook.svg';
+import github from '../assets/icons/github.svg';
+import instagram from '../assets/icons/instagram.svg';
+import logo from '../assets/icons/logo.svg';
+import msg from '../assets/icons/msg.svg';
+import telephone from '../assets/icons/telephone.svg';
+import twitter from '../assets/icons/twitter.svg';
+
 const loadHead = () => {
     const cont = document.getElementById('content');
     const header = document.createElement('header');
@@ -16,25 +24,27 @@ const loadHead = () => {
     const liSocial2 = document.createElement('li');
     const liSocial3 = document.createElement('li');
     const liSocial4 = document.createElement('li');
-    const imgSocial1 = document.createElement('img');
-    const imgSocial2 = document.createElement('img');
-    const imgSocial3 = document.createElement('img');
-    const imgSocial4 = document.createElement('img');
-    const imgInfo1 = document.createElement('img');
-    const imgInfo2 = document.createElement('img');
+
+    const imgSocial1 = new Image();
+    const imgSocial2 = new Image();
+    const imgSocial3 = new Image();
+    const imgSocial4 = new Image();
+    const imgInfo1 = new Image();
+    const imgInfo2 = new Image();
+
     const spanInfo1 = document.createElement('span');
     const spanInfo2 = document.createElement('span');
 
     sectionTop.setAttribute('id', 'top-header');
     ulInfo.setAttribute('id', 'info');
     ulSocial.setAttribute('id', 'social');
-    imgSocial1.setAttribute('src', './assets/icons/twitter.svg');
+    imgSocial1.src = twitter;
     imgSocial1.setAttribute('alt', 'twitterIcon');
-    imgSocial2.setAttribute('src', './assets/icons/facebook.svg');
+    imgSocial2.src = facebook;
     imgSocial2.setAttribute('alt', 'facebookIcon');
-    imgSocial3.setAttribute('src', './assets/icons/instagram.svg');
+    imgSocial3.src = instagram;
     imgSocial3.setAttribute('alt', 'instagramIcon');
-    imgSocial4.setAttribute('src', './assets/icons/github.svg');
+    imgSocial4.src = github;
     imgSocial4.setAttribute('alt', 'githubIcon');
     linkSocial1.setAttribute('href', '#');
     linkSocial2.setAttribute('href', '#');
@@ -42,9 +52,9 @@ const loadHead = () => {
     linkSocial4.setAttribute('href', '#');
 
     liInfo1.setAttribute('id', 'phoneNumber');
-    imgInfo1.setAttribute('src', './assets/icons/telephone.svg');
+    imgInfo1.src = telephone;
     imgInfo1.setAttribute('alt', 'telephoneIcon');
-    imgInfo2.setAttribute('src', './assets/icons/msg.svg');
+    imgInfo2.src = msg;
     imgInfo2.setAttribute('alt', 'messageIcon');
     spanInfo1.textContent = '(414) 857 - 0107';
     spanInfo2.textContent = 'yummy@bistrobliss';
@@ -81,7 +91,7 @@ const loadHead = () => {
     /*********Bottom head*********/
     const sectionBottom = document.createElement('section');
     const divLogo = document.createElement('div');
-    const imgLogo = document.createElement('img');
+    const imgLogo = new Image();
     const h1Logo = document.createElement('h1');
 
     const ulMenu = document.createElement('ul');
@@ -101,7 +111,7 @@ const loadHead = () => {
 
     sectionBottom.setAttribute('id', 'bottom-header');
     divLogo.setAttribute('id', 'logo-head');
-    imgLogo.setAttribute('src', './assets/icons/logo.svg');
+    imgLogo.src = logo;
     imgLogo.setAttribute('alt', 'logoIcon');
     h1Logo.textContent = 'Bistro Bliss';
     ulMenu.setAttribute('id', 'head-menu');
