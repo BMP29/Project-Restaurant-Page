@@ -1,12 +1,10 @@
-import loadHead from "../functions/header";
-import '../styles/home.css'
-
-export default loadHead;
+import clear from "../functions/clear";
 
 const loadHome = () => {
-    loadHead();
-
+    clear();
     const content = document.getElementById('content');
+
+    const divHome = document.createElement('div');
 
     const heroSection = document.createElement('section');
     const divHeroText = document.createElement('div');
@@ -26,6 +24,7 @@ const loadHome = () => {
     divHeroBtn2.classList.add('btn');
     divHeroLink1.setAttribute('href', '#');
     divHeroLink2.setAttribute('href', '#');
+    divHome.setAttribute('id', 'home');
     h1HeroText.textContent = 'Best food for your taste';
     pHeroText.textContent = 'Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.';
     divHeroLink1.textContent = 'Book A Table';
@@ -40,5 +39,8 @@ const loadHome = () => {
     divHeroBtn1.appendChild(divHeroLink1);
     divHeroBtn2.appendChild(divHeroLink2);
 
-    content.appendChild(heroSection);
+    divHome.appendChild(heroSection);
+    content.appendChild(divHome);
 }
+
+export default loadHome;

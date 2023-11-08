@@ -8,10 +8,6 @@
     --btnHeroRed: #AD343E;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     padding: 0;
     margin: 0;
@@ -23,10 +19,10 @@ body {
     box-sizing: border-box;
 }
 
-#content {
+#home {
     background-image: url('../assets/imgs/Hero.png');
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,6 +119,7 @@ ul, a {
     justify-content: space-between;
     align-items: center;
     padding: 20px 105px;
+    border-bottom: 1px solid var(--textHeroGray);
 }
 
 .btn a {

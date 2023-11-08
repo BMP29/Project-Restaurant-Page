@@ -1,3 +1,6 @@
+import loadHome from '../pages/home';
+import loadAbout from '../pages/about';
+
 import facebook from '../assets/icons/facebook.svg';
 import github from '../assets/icons/github.svg';
 import instagram from '../assets/icons/instagram.svg';
@@ -118,6 +121,7 @@ const loadHead = () => {
     divBtnHeader.classList.add('btn');
     linkMenu1.setAttribute('href', '#');
     linkMenu2.setAttribute('href', '#');
+    linkMenu2.setAttribute('id', 'about');
     linkMenu3.setAttribute('href', '#');
     linkMenu4.setAttribute('href', '#');
     linkMenu5.setAttribute('href', '#');
@@ -153,6 +157,14 @@ const loadHead = () => {
 
     header.appendChild(sectionTop);
     header.appendChild(sectionBottom);
+
+    linkMenu1.addEventListener('click', () => {
+        loadHome();
+    });
+
+    linkMenu2.addEventListener('click', () => {
+        loadAbout();
+    });
 };
 
 export default loadHead;
