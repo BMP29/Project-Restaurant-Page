@@ -1,6 +1,4 @@
 import loadHome from './pages/home';
-import './styles/home.css'
-
-loadHome();
+import loadAbout from './pages/about';
 
 console.log("everything is ok!");

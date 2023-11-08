@@ -4,6 +4,8 @@
     --headerGray: #474747;
     --btnDarkGray: #182226;
     --btnMenu: #DBDFD0;
+    --textHeroGray: #2C2F24;
+    --btnHeroRed: #AD343E;
 }
 
 html {
@@ -21,11 +23,21 @@ body {
     box-sizing: border-box;
 }
 
+#content {
+    background-image: url('../assets/imgs/Hero.png');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: white;
 }
 
 ul, a {
@@ -76,11 +88,15 @@ ul, a {
     text-wrap: nowrap;
 }
 
+#logo-head img {
+    height: 46px;
+}
+
 #logo-head h1 {
     font-family: 'Playfair Display';
     font-weight: bold;
     font-style: italic;
-    font-size: 42px;
+    font-size: 35px;
     color: var(--headerGray);
     margin: 0;
 }
@@ -114,10 +130,10 @@ ul, a {
     font-weight: bold;
     display: flex;
     align-items: center;
-    height: 50px;
-    padding: 0 25px;
+    height: 38px;
+    padding: 0 16px;
     border-radius: 50px;
-    border: 2px solid var(--btnDarkGray);
+    border: 1px solid var(--btnDarkGray);
     background-color: transparent;
     text-wrap: nowrap;
     transition: .15s ease-in-out;
@@ -127,4 +143,42 @@ ul, a {
     background-color: var(--btnDarkGray);
     color: white;
 
+}
+
+#hero {
+    width: 500px;
+    text-align: center;
+    margin-top: 150px;
+    color: var(--textHeroGray);
+}
+
+#hero h1 {
+    font-family: 'Playfair Display';
+    font-size: 85px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 82px;
+}
+
+#hero p {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 19px;
+}
+
+#hero-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+#hero-btns div a {
+    padding: 27px 17px;
+}
+
+#hero-btns div a:hover  {
+    background-color: var(--btnHeroRed);
+    border-color: transparent;
 }
