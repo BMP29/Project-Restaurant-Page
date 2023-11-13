@@ -157,10 +157,6 @@ const loadHead = () => {
 
     header.appendChild(sectionTop);
     header.appendChild(sectionBottom);
-    
-    const box = document.createElement('div');
-    box.setAttribute('style', 'height:12vh;');
-    cont.appendChild(box);
 
     linkMenu1.addEventListener('click', () => {
         loadHome();

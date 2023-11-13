@@ -3,7 +3,7 @@ const clear = () => {
 
     const all = content.children;
 
-    for (let i = 2; i < all.length; i++) {
+    for (let i = 1; i < all.length; i++) {
         all[i].remove();
     }
 }

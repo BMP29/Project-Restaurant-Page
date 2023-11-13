@@ -22,10 +22,11 @@ body {
 #home {
     background-image: url('../assets/imgs/Hero.png');
     background-size: cover;
-    height: 88vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
 }
 
 header {
@@ -146,6 +147,7 @@ ul, a {
     width: 500px;
     text-align: center;
     color: var(--textHeroGray);
+    margin-top: 100px;
 }
 
 #hero h1 {
