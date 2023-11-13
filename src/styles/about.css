@@ -1,4 +1,87 @@
-#teste {
-    background-color: red;
-    border: 3px solid blue;
+:root {
+    --infoCardGray: #474747;
+    --heroTextTop: #2C2F24;
+    --hetoLowerText: #414536;
+}
+
+#heroAbout {
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+#cardAbout {
+    position: relative;
+    margin-top: 50px;
+}
+
+#cardAbout > img {
+    width: 450px;
+}
+
+#cardAboutInfo {
+    position: absolute;
+    background-color: var(--infoCardGray);
+    border-radius: 10px;
+    color: white;
+    width: 320px;
+    padding: 37px 30px;
+    top: 200px;
+    left: 150px;
+    font-size: 13px;
+}
+
+#cardAboutInfo h2 {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#cardAboutInfo ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+#cardAboutInfo ul > li {
+    display: flex;
+}
+
+#cardAboutInfo ul > li img {
+    max-width: 25px;
+    margin-right: 10px;
+}
+
+#cardAboutInfo ul > li:not(:last-child) img {
+    width: 15px;
+}
+
+#cardAboutInfo ul > li:last-child img {
+    width: 18px;
+}
+
+#cardAboutInfo ul > li:nth-child(3) img {
+    margin-right: 8px;
+}
+
+
+#heroTextAbout {
+    width: 600px;
+    color: var(--heroTextTop);
+}
+
+#heroTextAbout h1 {
+    font-family: 'Playfair Display';
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#heroTextAbout p:last-child {
+    color: var(--hetoLowerText);
 }
