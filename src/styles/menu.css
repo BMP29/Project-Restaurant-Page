@@ -76,7 +76,13 @@
     align-items: center;
     text-align: center;
     border-radius: 20px;
+    background-color: white;
     box-shadow: 0px 0px 11px 4px #0000002e;
+}
+
+.card:hover {
+    scale: 1.05;
+    z-index: 1;
 }
 
 .card, .card img {
