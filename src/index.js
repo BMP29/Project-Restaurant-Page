@@ -7,3 +7,4 @@ import loadHome from './pages/home';
 console.log("everything is ok!");
 
 loadHead();
+loadHome();

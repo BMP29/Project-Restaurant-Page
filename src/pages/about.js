@@ -64,6 +64,6 @@ const loadAbout = () => {
     heroTextAbout.appendChild(heroTextAboutP1);
     heroTextAbout.appendChild(heroTextAboutP2);
     content.appendChild(heroAbout);
-}
+};
 
 export default loadAbout;

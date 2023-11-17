@@ -1,5 +1,6 @@
 import loadHome from '../pages/home';
 import loadAbout from '../pages/about';
+import loadMenu from '../pages/menu';
 
 import facebook from '../assets/icons/facebook.svg';
 import github from '../assets/icons/github.svg';
@@ -164,6 +165,10 @@ const loadHead = () => {
 
     linkMenu2.addEventListener('click', () => {
         loadAbout();
+    });
+
+    linkMenu3.addEventListener('click', () => {
+        loadMenu();
     });
 };
 
