@@ -43,6 +43,8 @@ ul, a {
     list-style: none;
     text-decoration: none;
     color: black;
+    padding: 0;
+    margin: 0;
 }
 
 #top-header {
@@ -62,8 +64,6 @@ ul, a {
 }
 
 #top-header ul {
-    padding: 0;
-    margin: 0;
     display: flex;
     gap: 25px;
     color: white;

@@ -1,3 +1,97 @@
+:root {
+    --pGray: #495460;
+    --titleGray: #2C2F24;
+    --btnsHeroMenu: #182226;
+    --pricerRed: #AD343E;
+}
+
+#menuHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #heroMenu {
-    height: 88vh;
+    margin-top: 140px;
+    gap: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heroMenu #menuText {
+    text-align: center;
+    width: 500px;
+} 
+
+#heroMenu #menuText h1 {
+    font-size: 96px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    margin: 0;
+    color: var(--titleGray);
+}
+
+#heroMenu #menuText p {
+    color: var(--pGray);
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#heroMenu #menuBtns {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap
+}
+
+#heroMenu #menuBtns a {
+    background-color: transparent;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 1px solid var(--btnsHeroMenu);
+    transition: .15s ease-in-out;
+}
+
+#heroMenu #menuBtns a:hover {
+    color: white;
+    background-color: var(--btnHeroRed);
+    border-color: transparent;
+}
+
+#menuCards {
+    width: 80%;
+    gap: 20px;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 30px;
+
+    grid-template-columns: repeat(auto-fit , minmax(306px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 11px 4px #0000002e;
+}
+
+.card, .card img {
+    width: 100%;
+}
+
+.card .dishPrice {
+    margin: 15px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--pricerRed);
+}
+
+.card span:last-of-type {
+    font-size: 1.2rem;
+    color: var(--titleGray);
+    font-weight: bold;
 }
