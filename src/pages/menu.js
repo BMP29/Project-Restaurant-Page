@@ -1,5 +1,14 @@
 import clear from "../functions/clear";
 import filterCards from "../functions/filterCards";
+import eggs from "../assets/imgs/eggs.png";
+import pizza from "../assets/imgs/pizza.png";
+import martinezCockTail from "../assets/imgs/martinezCockTail.png";
+import pie from "../assets/imgs/pie.png";
+import mintLemonade from "../assets/imgs/mintLemonade.png";
+import icecream from "../assets/imgs/icecream.png";
+import hamburger from "../assets/imgs/hamburger.png";
+import waffles from "../assets/imgs/waffles.png";
+
 
 const loadMenu = () => {
     clear();
@@ -94,7 +103,7 @@ const loadMenu = () => {
 
     card1.classList.add('card');
     card1.classList.add('breakfast');
-    card1Img.setAttribute('src', './assets/imgs/eggs.png');
+    card1Img.src = eggs;
     card1Img.setAttribute('alt', 'FriedEggsImg');
     DishPrice1.classList.add('dishPrice');
     DishPrice1.textContent = '$ 9.99';
@@ -104,7 +113,7 @@ const loadMenu = () => {
     card2.classList.add('card');
     card2.classList.add('breakfast');
     card2.classList.add('mainDish');
-    card2Img.setAttribute('src', './assets/imgs/pizza.png');
+    card2Img.src = pizza;
     card2Img.setAttribute('alt', 'PizzaImg');
     DishPrice2.classList.add('dishPrice');
     DishPrice2.textContent = '$ 15.99';
@@ -113,7 +122,7 @@ const loadMenu = () => {
 
     card3.classList.add('card');
     card3.classList.add('drink');
-    card3Img.setAttribute('src', './assets/imgs/martinezCockTail.png');
+    card3Img.src = martinezCockTail;
     card3Img.setAttribute('alt', 'martinezCockTailImg');
     DishPrice3.classList.add('dishPrice');
     DishPrice3.textContent = '$ 7.25';
@@ -122,7 +131,7 @@ const loadMenu = () => {
 
     card4.classList.add('card');
     card4.classList.add('dessert');
-    card4Img.setAttribute('src', './assets/imgs/pie.png');
+    card4Img.src = pie;
     card4Img.setAttribute('alt', 'pieImg');
     DishPrice4.classList.add('dishPrice');
     DishPrice4.textContent = '$ 20.99';
@@ -131,7 +140,7 @@ const loadMenu = () => {
 
     card5.classList.add('card');
     card5.classList.add('drink');
-    card5Img.setAttribute('src', './assets/imgs/mintLemonade.png');
+    card5Img.src = mintLemonade;
     card5Img.setAttribute('alt', 'mintLemonade');
     DishPrice5.classList.add('dishPrice');
     DishPrice5.textContent = '$ 5.89';
@@ -140,7 +149,7 @@ const loadMenu = () => {
 
     card6.classList.add('card');
     card6.classList.add('dessert');
-    card6Img.setAttribute('src', './assets/imgs/icecream.png');
+    card6Img.src = icecream;
     card6Img.setAttribute('alt', 'iceCreamImg');
     DishPrice6.classList.add('dishPrice');
     DishPrice6.textContent = '$ 18.05';
@@ -149,7 +158,7 @@ const loadMenu = () => {
 
     card7.classList.add('card');
     card7.classList.add('mainDish');
-    card7Img.setAttribute('src', './assets/imgs/hamburger.png');
+    card7Img.src = hamburger;
     card7Img.setAttribute('alt', 'hamburgerImg');
     DishPrice7.classList.add('dishPrice');
     DishPrice7.textContent = '$ 12.55';
@@ -158,7 +167,7 @@ const loadMenu = () => {
 
     card8.classList.add('card');
     card8.classList.add('breakfast');
-    card8Img.setAttribute('src', './assets/imgs/waffles.png');
+    card8Img.src = waffles;
     card8Img.setAttribute('alt', 'wafflesImg');
     DishPrice8.classList.add('dishPrice');
     DishPrice8.textContent = '$ 12.99';
