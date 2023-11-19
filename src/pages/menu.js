@@ -1,4 +1,5 @@
 import clear from "../functions/clear";
+import filterCards from "../functions/filterCards";
 
 const loadMenu = () => {
     clear();
@@ -92,6 +93,7 @@ const loadMenu = () => {
     menuCards.setAttribute('id', 'menuCards');
 
     card1.classList.add('card');
+    card1.classList.add('breakfast');
     card1Img.setAttribute('src', './assets/imgs/eggs.png');
     card1Img.setAttribute('alt', 'FriedEggsImg');
     DishPrice1.classList.add('dishPrice');
@@ -100,6 +102,8 @@ const loadMenu = () => {
     card1P1.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
 
     card2.classList.add('card');
+    card2.classList.add('breakfast');
+    card2.classList.add('mainDish');
     card2Img.setAttribute('src', './assets/imgs/pizza.png');
     card2Img.setAttribute('alt', 'PizzaImg');
     DishPrice2.classList.add('dishPrice');
@@ -108,6 +112,7 @@ const loadMenu = () => {
     card2P2.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
 
     card3.classList.add('card');
+    card3.classList.add('drink');
     card3Img.setAttribute('src', './assets/imgs/martinezCockTail.png');
     card3Img.setAttribute('alt', 'martinezCockTailImg');
     DishPrice3.classList.add('dishPrice');
@@ -116,6 +121,7 @@ const loadMenu = () => {
     card3P3.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
 
     card4.classList.add('card');
+    card4.classList.add('dessert');
     card4Img.setAttribute('src', './assets/imgs/pie.png');
     card4Img.setAttribute('alt', 'pieImg');
     DishPrice4.classList.add('dishPrice');
@@ -124,6 +130,7 @@ const loadMenu = () => {
     card4P4.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
 
     card5.classList.add('card');
+    card5.classList.add('drink');
     card5Img.setAttribute('src', './assets/imgs/mintLemonade.png');
     card5Img.setAttribute('alt', 'mintLemonade');
     DishPrice5.classList.add('dishPrice');
@@ -132,6 +139,7 @@ const loadMenu = () => {
     card5P5.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
 
     card6.classList.add('card');
+    card6.classList.add('dessert');
     card6Img.setAttribute('src', './assets/imgs/icecream.png');
     card6Img.setAttribute('alt', 'iceCreamImg');
     DishPrice6.classList.add('dishPrice');
@@ -140,6 +148,7 @@ const loadMenu = () => {
     card6P6.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
 
     card7.classList.add('card');
+    card7.classList.add('mainDish');
     card7Img.setAttribute('src', './assets/imgs/hamburger.png');
     card7Img.setAttribute('alt', 'hamburgerImg');
     DishPrice7.classList.add('dishPrice');
@@ -147,13 +156,14 @@ const loadMenu = () => {
     card7Span7.textContent = 'Cheese Burger';
     card7P7.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
 
-    card7.classList.add('card');
-    card7Img.setAttribute('src', './assets/imgs/waffles.png');
-    card7Img.setAttribute('alt', 'wafflesImg');
-    DishPrice7.classList.add('dishPrice');
-    DishPrice7.textContent = '$ 12.99';
-    card7Span7.textContent = 'Classic Waffles';
-    card7P7.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
+    card8.classList.add('card');
+    card8.classList.add('breakfast');
+    card8Img.setAttribute('src', './assets/imgs/waffles.png');
+    card8Img.setAttribute('alt', 'wafflesImg');
+    DishPrice8.classList.add('dishPrice');
+    DishPrice8.textContent = '$ 12.99';
+    card8Span8.textContent = 'Classic Waffles';
+    card8P8.textContent = "Made with eggs, lettuce, salt, oil and other ingredients.";
 
     content.appendChild(heroMenu);
 
@@ -221,6 +231,12 @@ const loadMenu = () => {
     card8.appendChild(DishPrice8);
     card8.appendChild(card8Span8);
     card8.appendChild(card8P8);
+
+    menuBtnsLiLink1.addEventListener('click', filterCards.bind(this, 'card'));
+    menuBtnsLiLink2.addEventListener('click', filterCards.bind(this, 'breakfast'));
+    menuBtnsLiLink3.addEventListener('click', filterCards.bind(this, 'mainDish'));
+    menuBtnsLiLink4.addEventListener('click', filterCards.bind(this, 'drink'));
+    menuBtnsLiLink5.addEventListener('click', filterCards.bind(this, 'dessert'));
 }
 
 export default loadMenu;
