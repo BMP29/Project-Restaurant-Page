@@ -1,4 +1,8 @@
 import clear from '../functions/clear';
+import msg from '../assets/icons/msg.svg';
+import telephone from '../assets/icons/telephone.svg';
+import locatation from '../assets/icons/location.svg';
+import heroAboutImg from '../assets/imgs/heroAboutImg.png';
 
 const loadAbout = () => {
     clear();
@@ -27,18 +31,18 @@ const loadAbout = () => {
 
     heroAbout.setAttribute('id', 'heroAbout');
     cardAbout.setAttribute('id', 'cardAbout');
-    cardAboutImg.setAttribute('src', './assets/imgs/heroAboutImg.png');
+    cardAboutImg.src = heroAboutImg;
     cardAboutImg.setAttribute('alt', 'foodOnAPlate');
     cardAboutInfo.setAttribute('id', 'cardAboutInfo');
     cardAboutInfoH2.textContent = 'Come and visit us';
     cardAboutInfoUlLi1Span.textContent = '(414) 857 - 0107';
     cardAboutInfoUlLi2Span.textContent = 'happytummy@restaurant.com';
     cardAboutInfoUlLi3Span.textContent = '837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles';
-    cardAboutInfoUlLi1Img.setAttribute('src', './assets/icons/telephone.svg');
+    cardAboutInfoUlLi1Img.src = telephone;
     cardAboutInfoUlLi1Img.setAttribute('alt', 'telephoneIcon');
-    cardAboutInfoUlLi2Img.setAttribute('src', './assets/icons/msg.svg');
+    cardAboutInfoUlLi2Img.src = msg;
     cardAboutInfoUlLi2Img.setAttribute('alt', 'messageIcon');
-    cardAboutInfoUlLi3Img.setAttribute('src', './assets/icons/location.svg');
+    cardAboutInfoUlLi3Img.src = locatation;
     cardAboutInfoUlLi3Img.setAttribute('alt', 'locationIcon');
     heroTextAbout.setAttribute('id', 'heroTextAbout');
     heroTextAboutH1.textContent = 'We provide healthy food for your family.';
