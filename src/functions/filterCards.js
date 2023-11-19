@@ -3,9 +3,9 @@ const filterCards = (type) => {
 
     cards.forEach((item) => {
         if(item.classList.contains(type)) {
-            item.setAttribute('style', 'postion:static; display:flex;');
+            item.setAttribute('style', 'position:static; display:flex;');
         }else {
-            item.setAttribute('style', 'postion:absolute; display:none;');
+            item.setAttribute('style', 'position:absolute; display:none;');
         }
 
         

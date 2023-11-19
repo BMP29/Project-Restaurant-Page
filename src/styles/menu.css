@@ -64,9 +64,10 @@
     gap: 20px;
     display: grid;
     justify-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 
-    grid-template-columns: repeat(auto-fit , minmax(306px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
 }
 
 .card {
@@ -101,4 +102,11 @@
     font-size: 1.2rem;
     color: var(--titleGray);
     font-weight: bold;
+}
+
+@media (min-width: 1440px) {
+    #menuCards {
+        width: 70%;
+        grid-template-columns: repeat(auto-fit, minmax(306px, 0.3fr));
+    }
 }
