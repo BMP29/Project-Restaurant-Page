@@ -5,11 +5,12 @@
 }
 
 #heroAbout {
-    height: 88vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 120px;
+    margin-top: 145px;
     flex-wrap: wrap;
 }
 
@@ -72,6 +73,7 @@
 #heroTextAbout {
     width: 600px;
     color: var(--heroTextTop);
+    margin-top: 20px;
 }
 
 #heroTextAbout h1 {
