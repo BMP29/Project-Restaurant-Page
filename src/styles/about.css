@@ -5,18 +5,16 @@
 }
 
 #heroAbout {
-    height: 100%;
+    height: 88vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 120px;
-    margin-top: 150px;
     flex-wrap: wrap;
 }
 
 #cardAbout {
     position: relative;
-    margin-top: 170px;
 }
 
 #cardAbout > img {
@@ -74,7 +72,6 @@
 #heroTextAbout {
     width: 600px;
     color: var(--heroTextTop);
-    margin-top: 20px;
 }
 
 #heroTextAbout h1 {
