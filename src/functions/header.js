@@ -53,7 +53,8 @@ const loadHead = () => {
     linkSocial1.setAttribute('href', '#');
     linkSocial2.setAttribute('href', '#');
     linkSocial3.setAttribute('href', '#');
-    linkSocial4.setAttribute('href', '#');
+    linkSocial4.setAttribute('href', 'https://github.com/BMP29');
+    linkSocial4.setAttribute('target', '_blank');
 
     liInfo1.setAttribute('id', 'phoneNumber');
     imgInfo1.src = telephone;
