@@ -53,7 +53,7 @@ const loadHead = () => {
     linkSocial1.setAttribute('href', '#');
     linkSocial2.setAttribute('href', '#');
     linkSocial3.setAttribute('href', '#');
-    //my gitHub
+    //My gitHub
     linkSocial4.setAttribute('href', 'https://github.com/BMP29');
     linkSocial4.setAttribute('target', '_blank');
 
